@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --bg: #F4F6F8;
+  --panel: #FFFFFF;
+  --muted: #9AA4AE;
+  --text: #1F2937;
+  --line: #E5E7EB;
+
+  --brand: #0EA5E9;
+  --ok: #10B981;
+  --warn: #F59E0B;
+  --alarm: #D32F2F;
+  --override: #7C3AED;
+}
+
+body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}

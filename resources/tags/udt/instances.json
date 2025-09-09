@@ -1,0 +1,78 @@
+{
+  "tags": [
+    {
+      "name": "ReceivingArea",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Tank1",
+          "tagType": "UdtInstance",
+          "typeId": "Tank"
+        },
+        {
+          "name": "Tank2",
+          "tagType": "UdtInstance",
+          "typeId": "Tank"
+        },
+        {
+          "name": "Tank3",
+          "tagType": "UdtInstance",
+          "typeId": "Tank"
+        }
+      ]
+    },
+    {
+      "name": "BlendingArea",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Mixer1",
+          "tagType": "UdtInstance",
+          "typeId": "Mixer"
+        },
+        {
+          "name": "Mixer2",
+          "tagType": "UdtInstance",
+          "typeId": "Mixer"
+        },
+        {
+          "name": "Reactor1",
+          "tagType": "UdtInstance",
+          "typeId": "Reactor"
+        },
+        {
+          "name": "Reactor2",
+          "tagType": "UdtInstance",
+          "typeId": "Reactor"
+        }
+      ]
+    },
+    {
+      "name": "PackagingArea",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Filler1",
+          "tagType": "UdtInstance",
+          "typeId": "Filler"
+        },
+        {
+          "name": "Filler2",
+          "tagType": "UdtInstance",
+          "typeId": "Filler"
+        }
+      ]
+    },
+    {
+      "name": "InventoryArea",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Inventory",
+          "tagType": "UdtInstance",
+          "typeId": "Inventory"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+try:
+    plant.sim.step()
+except:
+    system.util.getLogger("PlantSim").error("Sim error", sys.exc_info())

@@ -1,0 +1,177 @@
+{
+  "tags": [
+    {
+      "name": "Tank",
+      "tagType": "UdtType",
+      "tags": [
+        {
+          "name": "LevelPct",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 50.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "TemperatureC",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 22.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "OutletOpen",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "value": false
+        },
+        {
+          "name": "MaxDrawLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 4.0
+        }
+      ]
+    },
+    {
+      "name": "Mixer",
+      "tagType": "UdtType",
+      "tags": [
+        {
+          "name": "Running",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "value": true
+        },
+        {
+          "name": "SpeedRPM",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 900.0
+        },
+        {
+          "name": "InflowLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "OutflowLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "LossFactor",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.02
+        }
+      ]
+    },
+    {
+      "name": "Reactor",
+      "tagType": "UdtType",
+      "tags": [
+        {
+          "name": "TemperatureC",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 30.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "PressureBar",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 1.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "AgitatorRPM",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 300.0
+        },
+        {
+          "name": "InflowLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "OutflowLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "HoldUpLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "name": "Filler",
+      "tagType": "UdtType",
+      "tags": [
+        {
+          "name": "Running",
+          "tagType": "AtomicTag",
+          "dataType": "Boolean",
+          "value": true
+        },
+        {
+          "name": "RateBPM",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 60.0
+        },
+        {
+          "name": "Count",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "value": 0,
+          "historyEnabled": true
+        },
+        {
+          "name": "FeedLpm",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.0,
+          "historyEnabled": true
+        },
+        {
+          "name": "BottleVolumeL",
+          "tagType": "AtomicTag",
+          "dataType": "Float4",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "name": "Inventory",
+      "tagType": "UdtType",
+      "tags": [
+        {
+          "name": "CasesOnHand",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "value": 0,
+          "historyEnabled": true
+        },
+        {
+          "name": "BottlesPerCase",
+          "tagType": "AtomicTag",
+          "dataType": "Int4",
+          "value": 24
+        }
+      ]
+    }
+  ]
+}
