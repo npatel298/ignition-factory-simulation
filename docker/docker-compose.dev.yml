@@ -1,0 +1,31 @@
+services:
+  ignition:
+    image: inductiveautomation/ignition:8.1.39
+    container_name: ignition_dev
+    ports:
+      - "8099:8088"
+    environment:
+      - ACCEPT_IGNITION_EULA=Y
+      - GATEWAY_ADMIN_USERNAME=admin
+      - GATEWAY_ADMIN_PASSWORD=ignition
+    volumes:
+      # general Ignition data persisted via named volume
+      - ignition_data:/usr/local/bin/ignition/data
+      # your project resources
+      - ../projects:/usr/local/bin/ignition/data/projects
+      # 🔒 PERSISTENT THEME from repo (read-only bind mount)
+      - ../theme:/usr/local/bin/ignition/data/modules/com.inductiveautomation.perspective/themes/digital-factory:ro
+    restart: unless-stopped
+
+  db:
+    image: postgres:16
+    container_name: ignition_db
+    environment:
+      - POSTGRES_PASSWORD=ignition
+      - POSTGRES_DB=ignition
+    ports: ["5432:5432"]
+    volumes:
+      - ../db/init:/docker-entrypoint-initdb.d
+
+volumes:
+  ignition_data:
